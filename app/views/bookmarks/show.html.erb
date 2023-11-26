@@ -1,0 +1,8 @@
+<div class="background-image" style="background-image: url('<%= @list.image_url %>');"></div>
+<h1><%= @list.name %></h1>
+<% @list.bookmarks.each do |bookmark| %>
+  <p>
+    <%= render 'bookmarks/delete_link', bookmark: bookmark %>
+    <%= bookmark.comment %>
+  </p>
+<% end %>

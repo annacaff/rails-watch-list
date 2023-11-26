@@ -1,0 +1,8 @@
+<div class="movie-list">
+  <h2>Top Rated Movies</h2>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li class="movie-item"><%= movie['title'] %></li>
+    <% end %>
+  </ul>
+</div>
